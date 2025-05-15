@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt – Tom Rüdisüli</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="website.html">Über mich</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li class="titel">Tom Rüdisüli</li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="faehigkeiten.html">Fähigkeiten</a></li>
+    </ul>
+  </nav>
+
+  <section id="ueber-mich">
+    <button>Kontakt</button>
+  </section>
+
+  <section id="kontakttitel" class="container blue kontaktformular"> 
+    <h3 class="kontakt">Kontaktformular:</h3>
+    <form>
+      <label for="name">Ihr Name:</label>
+      <input type="text" id="name" name="name" class="inputfeld">
+
+      <label for="email">Ihre E-Mail Adresse:</label>
+      <input type="email" id="email" name="email" class="inputfeld">
+
+      <label for="nachricht">Ihre Nachricht:</label>
+      <textarea id="nachricht" name="nachricht" rows="5" class="inputfeld"></textarea>
+
+      <button type="submit" class="senden-button">Senden</button>
+      <p id="erfolgsmeldung" style="display: none; color: #00c2ff; margin-top: 1rem;">E-Mail wurde an den Inhaber gesendet.</p>
+    </form>
+  </section>
+
+  <section class="container kontakt-info">
+    <div class="info-block blue">
+      <p>tiktok: @hehehehaismus</p>
+      <p>instagram: @tomm.rds</p>
+    </div>
+    <div class="info-block cyan">
+      <p>email:<br> ruedisueli.tom@gmail.com</p>
+      <p>telefon: 077 537 05 74</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Tom Rüdisüli ©2025</p>
+  </footer>
+
+  <script>
+    document.querySelector("form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      document.getElementById("erfolgsmeldung").style.display = "block";
+    });
+  </script>
+</body>
+</html>
