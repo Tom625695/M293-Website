@@ -87,13 +87,19 @@ body {
   font-size: 1.4rem;
 }
 
+.lebenslaufMitBildContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+
 .lebenslaufContainer {
   display: flex;
   flex-direction: column;
+  text-align: left;
+  justify-content: space-around;
 }
 
-.lebenslaufMitBildContainer {
-  display: grid;
-  grid-template-areas: "text image";
-  grid-template-rows: auto 1fr;
+footer {
+  text-align: center;
 }
