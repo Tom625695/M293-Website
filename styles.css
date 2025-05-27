@@ -10,13 +10,38 @@ html, body {
   color: white;
 }
 
+div#ueber-mich,
+div#portfolio,
+div#kontakt,
+div#faehigkeiten {
+  padding-top: 10rem;
+  padding-bottom: 0rem;
+}
+
+p, li {
+  font-size: 18px;
+}
+
+h1 {
+font-size: 25px; 
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
 nav {
-  background: linear-gradient(90deg, #6e2ed1, #8f44fd);
+  background: linear-gradient(#581CFF);
   padding: 1rem;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
+  justify-content: center;
 }
 
 nav ul {
@@ -35,18 +60,20 @@ nav ul li a {
   text-decoration: none;
 }
 
+
 nav ul .titel {
   font-weight: bold;
   font-size: 1.2em;
+  font-size: 30px;
 }
 
-section {
+div {
   padding: 2rem 1rem 1rem 1rem;
   text-align: center;
   box-sizing: border-box;
 }
 
-section#ueber-mich {
+div#ueber-mich {
   padding-top: 5rem;
   padding-bottom: 1rem;
   display: flex;
@@ -55,7 +82,7 @@ section#ueber-mich {
   flex-direction: column;
 }
 
-section#ueber-mich button {
+div#ueber-mich button {
   width: calc(100% - 2rem);
   max-width: 1120px;
   padding: 2rem;
@@ -65,7 +92,7 @@ section#ueber-mich button {
 }
 
 button {
-  background-color: #00c2ff;
+  background-color: #009DFF;
   color: white;
   font-size: 1.2em;
   padding: 1rem 2rem;
@@ -75,7 +102,7 @@ button {
 }
 
 .container {
-  margin: 2rem auto;
+  margin: 0rem auto;
   width: 100%;
   max-width: 1120px;
   padding: 2rem;
@@ -86,8 +113,8 @@ button {
 .containerpictures {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* statt space-around */
-  gap: 1.5rem; /* jetzt wirkt wirklich nur dieser Abstand */
+  justify-content: center; 
+  gap: 1.5rem; 
 }
 
 .smallpicture {
@@ -102,7 +129,7 @@ button {
 }
 
 .blue {
-  background-color: #1e1ef5;
+  background-color: #2F57E8;
   
 }
 
@@ -110,8 +137,12 @@ button {
     margin-top: 0rem;
 }
 
+.darkblue {
+  background-color: #000F61;
+}
+
 .purple {
-  background-color: #4b00ff;
+  background-color: #581CFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -131,7 +162,7 @@ button {
   font-size: 40px;
 }
 
-section h2 {
+div h2 {
   font-size: 36px;
   margin-bottom: 1.5rem;
 }
@@ -175,7 +206,7 @@ section h2 {
 }
 
 .hobby h3 {
-  font-size: 1.5em;
+  font-size: 25px;
   margin: 0 0 0.5rem 0;
 }
 
@@ -215,7 +246,6 @@ footer {
 }
 
 .kontaktformular {
-  border: 2px solid #00c2ff;
   border-radius: 30px;
   padding: 2rem;
   text-align: center;
@@ -274,18 +304,27 @@ footer {
 }
 
 .cyan {
-  background-color: #00c2ff;
+  background-color: #009DFF;
 }
 
 #kontakt h2 {
     margin-top: 100rem;
 }
 
+.projektbild {
+  width: 1050px;
+  object-fit: cover;
+  max-height: 360px;
+  border-radius: 40px;
+  justify-content: center;
+}
+
 /* Responsive Layout */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
-    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 0;
   }
 
   #lebenslauf {
@@ -296,6 +335,8 @@ footer {
   #lebenslauf ul {
     padding-left: 0;
     text-align: center;
+    margin: 0;
+    font-size: 20px;
   }
 
   .profilbild {
@@ -313,35 +354,32 @@ footer {
     margin-bottom: 1rem;
   }
 
-section#ueber-mich,
-section#portfolio {
-  padding-top: 12rem;
-  padding-bottom: 0rem;
-}
-
-  section#ueber-mich button {
-    font-size: 1.2em;
-    padding: 1.5rem;
+  div#ueber-mich,
+  div#portfolio,
+  div#kontakt,
+  div#faehigkeiten {
+    /*padding-top: 11rem;*/
+    padding-bottom: 0;
+    width: 25em; 
   }
 
-  section h2 {
-    font-size: 28px;
-  }
 
+  div h2,
   #lebenslauf h2 {
-    font-size: 32px;
-  }
-
-  #lebenslauf ul {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .container {
+    padding: 1.5rem 1rem;
     width: 95%;
-    padding: 1.5rem;
   }
 
-  
+  .projektbild {
+    width: 275px;
+    height: auto;
+    border-radius: 10px;
+    max-height: 200px;
+  }
 }
 
 @media (min-width: 769px) {
@@ -354,12 +392,10 @@ section#portfolio {
   .hobby img {
     margin-right: 1rem;
     margin-bottom: 0;
-    
   }
 
-  section#ueber-mich,
-section#portfolio {
-  
-  padding-bottom: 0rem;
-}
+  div#ueber-mich,
+  div#portfolio {
+    padding-bottom: 0;
+  }
 }
