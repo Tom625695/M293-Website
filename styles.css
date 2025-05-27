@@ -6,19 +6,94 @@ body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: black;
   color: white;
 }
 
 .container {
-  background-color: #581CFF;
-  border-radius: 1em;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
-.ueberTitel {}
+.name {
+  font-size: 2rem;
+}
 
 .navBar {
   display: flex;
-  gap: 1em;
+  justify-content: center;
+  padding: 0.5rem 0px;
+}
+
+.navBar *:not(.name) {
+  padding: 0.5rem 0px;
+  text-decoration: none;
+  color: white;
+}
+
+.navBar * {
+  margin: 0px 1rem;
+}
+
+.lightBlue {
+  background-color: #009dff;
+}
+
+.blue {
+  background-color: #2f57e8;
+}
+
+.purpleBlue {
+  background-color: #581cff;
+}
+
+.darkBlue {
+  background-color: #000f61;
+}
+
+.title {
+  font-size: 1.75rem;
+}
+
+.hobbies {
+  display: flex;
+  flex-direction: column;
+}
+
+.oneHobby {
+  display: grid;
+  grid-template-areas: "image text";
+  grid-template-rows: 1fr auto;
+  gap: 1rem;
+}
+
+.oneHobby img {
+  grid-area: image;
+}
+
+.hobbiesText {
+  grid-area: text;
+}
+
+.hobbiesText * {
+  text-align: left;
+}
+
+.unterTitel {
+  font-size: 1.4rem;
+}
+
+.lebenslaufContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.lebenslaufMitBildContainer {
+  display: grid;
+  grid-template-areas: "text image";
+  grid-template-rows: auto 1fr;
 }
