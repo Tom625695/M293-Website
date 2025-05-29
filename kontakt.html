@@ -9,48 +9,48 @@
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li><a href="website.html">Über mich</a></li>
-      <li><a href="kontakt.html">Kontakt</a></li>
-      <li class="titel">Tom Rüdisüli</li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="faehigkeiten.html">Fähigkeiten</a></li>
-    </ul>
-  </nav>
+    <div class="navBar purpleBlue">
+      <a href="website.html">Über mich</a>
+      <a href="kontakt.html">Kontakt</a>
+      <div class="name">Tom Rüdisüli</div>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="faehigkeiten.html">Fähigkeiten</a>
+    </div>
 
-  <div id="ueber-mich">
-    <button>Kontakt</button>
-  </div>
+   <div class="container lightBlue title">Kontakt</div>
 
-  <div id="kontakttitel" class="container blue kontaktformular">
-    <h1 class="kontakt">Kontaktformular:</h1>
-    <form>
-      <label for="name">Ihr Name:</label>
-      <input type="text" id="name" name="name" class="inputfeld">
+    <div class="kontaktformular blue">
+      <div class="title">Kontaktformular
+      <form>
+        <label for="name" class="form-label">Ihr Name:</label>
+        <input type="text" id="name" name="name" class="inputfeld">
 
-      <label for="email">Ihre E-Mail Adresse:</label>
-      <input type="email" id="email" name="email" class="inputfeld">
+        <label for="email" class="form-label">Ihre E-Mail Adresse:</label>
+        <input type="email" id="email" name="email" class="inputfeld">
 
-      <label for="nachricht">Ihre Nachricht:</label>
-      <textarea id="nachricht" name="nachricht" rows="5" class="inputfeld"></textarea>
+        <label for="nachricht" class="form-label">Ihre Nachricht:</label>
+        <textarea id="nachricht" name="nachricht" rows="5" class="inputfeld"></textarea>
 
-      <button type="submit" class="senden-button">Senden</button>
-      <p id="erfolgsmeldung" style="display: none; color: #00c2ff; margin-top: 1rem;">E-Mail wurde an den Inhaber
-        gesendet.</p>
+        <button type="submit" class="senden-button">Senden</button>
+        <div id="erfolgsmeldung" style="display: none; color: #00c2ff; margin-top: 1rem;">E-Mail wurde an den Inhaber
+        gesendet.</div>
     </form>
+    </div>
+  </div>
   </div>
 
-  <div class="container kontakt-info">
-    <div class="info-block blue">
-      <p>tiktok: @hehehehaismus</p>
-      <p>instagram: @tomm.rds</p>
+    <div class="InfoContainer">
+      <div class="blue">
+        <p>tiktok: @hehehehaismus</p>
+        <p>instagram: @tomm.rds</p>
+      </div>
+
+      <div class="lightBlue">
+        <p>email:<br> ruedisueli.tom@gmail.com</p>
+        <p>telefon: 077 537 05 74</p>
+      </div>
     </div>
-    <div class="info-block cyan">
-      <p>email:<br> ruedisueli.tom@gmail.com</p>
-      <p>telefon: 077 537 05 74</p>
-    </div>
-  </div>
+ 
 
   <footer>
     <p>Tom Rüdisüli ©2025</p>
